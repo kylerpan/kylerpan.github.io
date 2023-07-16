@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Intro from "../../components/Intro";
 
 export default function Resume() {
@@ -9,6 +11,15 @@ export default function Resume() {
           header="My Resume"
           button="Download"
         />
+        <div id="description" className="flex gap-12 mt-44">
+          <Image
+            src="/assets/resume.png"
+            alt="resume"
+            height={500}
+            width={1000}
+            className="flex"
+          />
+        </div>
       </div>
     </main>
   );
