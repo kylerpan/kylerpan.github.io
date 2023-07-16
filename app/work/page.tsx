@@ -1,4 +1,5 @@
 import Intro from "../../components/Intro";
+import Card from "../../components/Card";
 
 export default function Work() {
   return (
@@ -9,6 +10,13 @@ export default function Work() {
           header="My Work Experience"
           button="Learn more"
         />
+        <div id="description" className="mt-96">
+          <Card
+            imagePath="/assets/ups.png"
+            name={"United\n Parcel\n Service"}
+            routeName="/work/ups"
+          />
+        </div>
       </div>
     </main>
   );

@@ -7,7 +7,7 @@ export default function Home() {
         <Intro
           description="👋 Hey there, my name is Kyle and I am a"
           header="Software Developer"
-          button="Learn more"
+          button="About me"
         />
       </div>
     </main>
