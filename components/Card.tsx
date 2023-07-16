@@ -10,17 +10,17 @@ interface Props {
 const Card = (props: Props) => {
   return (
     <Link
-      href={props.routeName}
+      href={"/work/" + props.routeName}
       className="relative flex text-white rounded-full h-[30rem] w-48 text-center justify-center items-center hover:text-black transition ease-in-out duration-500"
     >
       <Image
         src={props.imagePath}
-        alt="UPS"
+        alt={props.routeName}
         fill={true}
         className="absolute rounded-full z-1"
       />
       <div className="absolute bg-[#585858] rounded-full h-full w-full opacity-70 z-2 hover:bg-[#D4D4D4] hover:text-black transition ease-in-out duration-500" />
-      <p className="text-3xl font-bold whitespace-pre-wrap z-10">
+      <p className="text-2xl font-bold whitespace-pre-wrap z-10">
         {props.name}
       </p>
     </Link>

@@ -10,11 +10,21 @@ export default function Work() {
           header="My Work Experience"
           button="Learn more"
         />
-        <div id="description" className="mt-96">
+        <div id="description" className="flex gap-12 mt-44">
           <Card
             imagePath="/assets/ups.png"
             name={"United\n Parcel\n Service"}
-            routeName="/work/ups"
+            routeName="ups"
+          />
+          <Card
+            imagePath="/assets/ultrasound_baby.png"
+            name={"Cloudstream\n Medical\n Imaging\n Inc."}
+            routeName="csmi"
+          />
+          <Card
+            imagePath="/assets/supercomputer_center.png"
+            name={"San\n Diego\n Supercomputer\n Center"}
+            routeName="sdsc"
           />
         </div>
       </div>
