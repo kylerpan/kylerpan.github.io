@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="flex justify-end gap-5 px-8 py-6">
+    <div className="flex flex-grow-0 flex-shrink justify-end gap-5 px-10 py-8">
       <Link
         target="_blank"
         href="https://www.linkedin.com/in/kylerpan/"

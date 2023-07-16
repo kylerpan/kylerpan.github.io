@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Nav = () => {
   return (
-    <nav className="flex flex-grow-0 flex-shrink flex-row justify-between w-full px-8 py-6">
+    <nav className="flex flex-grow-0 flex-shrink flex-row justify-between w-full px-10 py-8">
       <Link href="/" className="text-5xl">
         KP
       </Link>
@@ -22,7 +22,7 @@ const Nav = () => {
         </Link>
         <a
           href="mailto:kylerpan691@gmail.com"
-          className="text-lg text-white bg-black rounded-md py-1 px-3 text-center"
+          className="text-lg text-white bg-black rounded-md py-2 px-3 text-center"
         >
           Contact
         </a>
