@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
-  imagePath: string;
   name: string;
+  imagePath: string;
   routeName: string;
 }
 

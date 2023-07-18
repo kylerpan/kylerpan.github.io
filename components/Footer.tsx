@@ -10,7 +10,7 @@ const Footer = () => {
         className="flex flex-center"
       >
         <Image
-          src="/assets/linkedin.png"
+          src="/assets/images/linkedin.png"
           alt="Linkedin Logo"
           width={30}
           height={30}
@@ -22,7 +22,7 @@ const Footer = () => {
         className="flex flex-center"
       >
         <Image
-          src="/assets/github.png"
+          src="/assets/images/github.png"
           alt="Github Logo"
           width={30}
           height={30}
@@ -34,7 +34,7 @@ const Footer = () => {
         className="flex flex-center"
       >
         <Image
-          src="/assets/instagram.png"
+          src="/assets/images/instagram.png"
           alt="Instagram Logo"
           width={30}
           height={30}

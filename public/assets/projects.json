@@ -1,0 +1,22 @@
+[
+  {
+    "id": "peterportal",
+    "name": "Peter Portal",
+    "imagePath": "/assets/images/peterportal.png"
+  },
+  {
+    "id": "find-your-anchor",
+    "name": "Find Your Anchor",
+    "imagePath": "/assets/images/find_your_anchor.png"
+  },
+  {
+    "id": "bar-path",
+    "name": "Bar Path Tracking",
+    "imagePath": "/assets/images/bar_path.png"
+  },
+  {
+    "id": "ups-healthcare",
+    "name": "UPS Healthcare Onboarding Portal",
+    "imagePath": "/assets/images/ups_healthcare.png"
+  }
+]

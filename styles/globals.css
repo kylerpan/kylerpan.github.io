@@ -25,5 +25,5 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(../public/assets/san_diego.png);
+  background-image: url(../public/assets/images/san_diego.png);
 }

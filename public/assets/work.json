@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ups",
+    "name": "United Parcel Service",
+    "imagePath": "/assets/images/ups.png"
+  },
+  {
+    "id": "csmi",
+    "name": "Cloudstream Medical Imaging Inc.",
+    "imagePath": "/assets/images/ultrasound_baby.png"
+  },
+  {
+    "id": "sdsc",
+    "name": "San Diego Supercomputer Center",
+    "imagePath": "/assets/images/supercomputer_center.png"
+  }
+]
