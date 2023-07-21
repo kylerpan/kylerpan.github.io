@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 import Card from "./Card";
+import Description from "./Description";
 import work from "@/public/assets/work.json";
 import projects from "@/public/assets/projects.json";
 
@@ -20,8 +21,9 @@ interface PopUpProps {
 }
 
 const PopUp = (props: PopUpProps) => {
-  var data: any = props.route == "/work/" ? work : projects;
-  var location: string = data[props.index].location
+  var datas: any = props.route == "/work/" ? work : projects;
+  var data: any = datas[props.index];
+  var location: string = data.location
     .split(", ")[0]
     .replace(" ", "_")
     .toLowerCase();
@@ -31,11 +33,11 @@ const PopUp = (props: PopUpProps) => {
       style={{
         backgroundImage: `url(/assets/backgrounds/${location}.png)`,
       }}
-      className={`flex flex-col items-center absolute top-0 left-0 w-full h-full bg-white`}
+      className={`flex flex-col items-center absolute top-0 left-0 w-full min-h-screen h-fit bg-white`}
     >
       <div className="flex flex-col m-32 gap-5">
         <div className="flex justify-between items-center">
-          <h1 className="text-7xl font-bold">{data[props.index].name}</h1>
+          <h1 className="text-7xl font-bold">{data.name}</h1>
           <Link
             href={props.route.slice(0, -1)}
             className="text-5xl font-bold ml-5"
@@ -43,41 +45,32 @@ const PopUp = (props: PopUpProps) => {
             &#10005;
           </Link>
         </div>
-        {data[props.index].date.length == 1 ? (
-          <div className="flex flex-col gap-5">
-            <p className="text-3xl">{data[props.index].position}</p>
-            <p>
-              {data[props.index].date} &#x2022; {data[props.index].location}
-            </p>
-            <p className="text-xl">{data[props.index].description}</p>
-            <p className="text-xl font-bold">Skills Used</p>
-            <p>{data[props.index].skills}</p>
-          </div>
+        {data.date.length == 1 ? (
+          <Description
+            position={data.position}
+            date={data.date}
+            location={data.location}
+            description={data.description}
+            skills={data.skills[0]}
+          />
         ) : (
-          <Timeline className="flex justify-self-start p-0 gap-5">
-            {Array.from({ length: data[props.index].date.length }).map(
+          <Timeline className="flex justify-self-start !p-0 gap-5">
+            {Array.from({ length: data.date.length }).map(
               (el: any, i: number) => (
                 <TimelineItem>
-                  <TimelineOppositeContent className="flex-none p-0" />
+                  <TimelineOppositeContent className="!flex-none !p-0" />
                   <TimelineSeparator>
                     <TimelineDot />
                     <TimelineConnector />
                   </TimelineSeparator>
                   <TimelineContent>
-                    <div className="flex flex-col gap-5">
-                      <p className="text-3xl">
-                        {data[props.index].position[i]}
-                      </p>
-                      <p>
-                        {data[props.index].date[i]} &#x2022;{" "}
-                        {data[props.index].location}
-                      </p>
-                      <p className="text-xl">
-                        {data[props.index].description[i]}
-                      </p>
-                      <p className="text-xl font-bold">Skills Used</p>
-                      <p>{data[props.index].skills[i]}</p>
-                    </div>
+                    <Description
+                      position={data.position[i]}
+                      date={data.date[i]}
+                      location={data.location}
+                      description={data.description[i]}
+                      skills={data.skills[i]}
+                    />
                   </TimelineContent>
                 </TimelineItem>
               )
@@ -85,10 +78,10 @@ const PopUp = (props: PopUpProps) => {
           </Timeline>
         )}
       </div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mb-32">
         <h2 className="text-4xl font-bold">Other Work</h2>
         <div id="description" className="flex gap-12 mt-16 h-96">
-          {data.map((data: any, i: number) => {
+          {datas.map((data: any, i: number) => {
             if (i != props.index) {
               return (
                 <Card
