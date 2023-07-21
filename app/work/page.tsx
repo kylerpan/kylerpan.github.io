@@ -1,6 +1,6 @@
-import Intro from "../../components/Intro";
-import Card from "../../components/Card";
-import work from "../../public/assets/work.json";
+import Intro from "@/components/Intro";
+import Card from "@/components/Card";
+import work from "@/public/assets/work.json";
 
 export default function Work() {
   return (

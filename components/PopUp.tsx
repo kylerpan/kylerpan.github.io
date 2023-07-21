@@ -11,19 +11,25 @@ interface PopUpProps {
 
 const PopUp = (props: PopUpProps) => {
   var data: any = props.route == "/work/" ? work : projects;
-  var location: string =
-    "bg-" +
-    data[props.index].location.split(", ")[0].replace(" ", "-").toLowerCase();
-  console.log(location);
+  var location: string = data[props.index].location
+    .split(", ")[0]
+    .replace(" ", "_")
+    .toLowerCase();
 
   return (
     <div
-      className={`flex flex-col items-center absolute top-0 left-0 w-full h-full bg-white ${location}`}
+      style={{
+        backgroundImage: `url(/assets/backgrounds/${location}.png)`,
+      }}
+      className={`flex flex-col items-center absolute top-0 left-0 w-full h-full bg-white`}
     >
       <div className="flex flex-col m-32 gap-5">
         <div className="flex justify-between items-center">
           <h1 className="text-7xl font-bold">{data[props.index].name}</h1>
-          <Link href="/work" className="text-5xl font-bold">
+          <Link
+            href={props.route.slice(0, -1)}
+            className="text-5xl font-bold ml-5"
+          >
             &#10005;
           </Link>
         </div>
