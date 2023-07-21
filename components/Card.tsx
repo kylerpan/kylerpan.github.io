@@ -1,21 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 
-interface Props {
+interface CardProps {
+  id: string;
   name: string;
   imagePath: string;
-  routeName: string;
+  route: string;
 }
 
-const Card = (props: Props) => {
+const Card = (props: CardProps) => {
   return (
     <Link
-      href={"/work/" + props.routeName}
-      className="relative flex text-white rounded-full h-[30rem] w-48 text-center justify-center items-center hover:text-black transition ease-in-out duration-500"
+      href={props.route + props.id}
+      className="relative flex text-white rounded-full h-full w-52 text-center justify-center items-center hover:text-black transition ease-in-out duration-500"
     >
       <Image
         src={props.imagePath}
-        alt={props.routeName}
+        alt={props.id}
         fill={true}
         className="absolute rounded-full z-1"
       />

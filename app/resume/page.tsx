@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Intro from "../../components/Intro";
+import Intro from "@/components/Intro";
 
 export default function Resume() {
   return (

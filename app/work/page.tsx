@@ -11,13 +11,14 @@ export default function Work() {
           header="My Work Experience"
           button="Learn more"
         />
-        <div id="description" className="flex gap-12 mt-44">
+        <div id="description" className="flex gap-12 mt-44 h-[35rem]">
           {work.map((work) => (
             <Card
               key={work.id}
+              id={work.id}
               name={work.name}
               imagePath={work.imagePath}
-              routeName={work.id}
+              route="/work/"
             />
           ))}
         </div>

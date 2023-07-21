@@ -1,6 +1,6 @@
-import Intro from "../../components/Intro";
-import Card from "../../components/Card";
-import projects from "../../public/assets/projects.json";
+import Intro from "@/components/Intro";
+import Card from "@/components/Card";
+import projects from "@/public/assets/projects.json";
 
 export default function Projects() {
   return (
@@ -11,13 +11,14 @@ export default function Projects() {
           header="My Projects"
           button="Learn more"
         />
-        <div id="description" className="flex gap-12 mt-44">
+        <div id="description" className="flex gap-12 mt-44 h-[35rem]">
           {projects.map((project) => (
             <Card
               key={project.id}
+              id={project.id}
               name={project.name}
               imagePath={project.imagePath}
-              routeName={project.id}
+              route="/projects/"
             />
           ))}
         </div>

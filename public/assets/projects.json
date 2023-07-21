@@ -1,22 +1,42 @@
 [
   {
     "id": "peterportal",
-    "name": "Peter Portal",
-    "imagePath": "/assets/images/peterportal.png"
+    "name": "PeterPortal",
+    "imagePath": "/assets/images/peterportal.png",
+    "date": "September 2022 - Present",
+    "location": "Irvine, CA",
+    "position": "Information Security Management Co-op",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "skills": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     "id": "find-your-anchor",
-    "name": "Find Your Anchor",
-    "imagePath": "/assets/images/find_your_anchor.png"
+    "name": "Find\n Your\n Anchor",
+    "imagePath": "/assets/images/find_your_anchor.png",
+    "date": "September 2022 - Present",
+    "location": "Irvine, CA",
+    "position": "Information Security Management Co-op",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "skills": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     "id": "bar-path",
-    "name": "Bar Path Tracking",
-    "imagePath": "/assets/images/bar_path.png"
+    "name": "Bar\n Path\n Tracking",
+    "imagePath": "/assets/images/bar_path.png",
+    "date": "September 2022 - Present",
+    "location": "San Diego, CA",
+    "position": "Information Security Management Co-op",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "skills": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     "id": "ups-healthcare",
-    "name": "UPS Healthcare Onboarding Portal",
-    "imagePath": "/assets/images/ups_healthcare.png"
+    "name": "UPS\n Healthcare\n Onboarding\n Portal",
+    "imagePath": "/assets/images/ups_healthcare.png",
+    "date": "September 2022 - Present",
+    "location": "Remote - Timonmium, MD",
+    "position": "Information Security Management Co-op",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "skills": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }
 ]

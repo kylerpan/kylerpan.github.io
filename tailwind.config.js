@@ -6,7 +6,13 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        timonium: "url('/assets/backgrounds/timonium.png')",
+        irvine: "url('/assets/backgrounds/irvine.png')",
+        "san-diego": "url('/assets/backgrounds/san_diego.png')",
+      },
+    },
   },
   plugins: [],
 };

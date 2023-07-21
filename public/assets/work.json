@@ -1,17 +1,32 @@
 [
   {
     "id": "ups",
-    "name": "United Parcel Service",
-    "imagePath": "/assets/images/ups.png"
+    "name": "United\n Parcel\n Service",
+    "imagePath": "/assets/images/ups.png",
+    "date": "September 2022 - Present",
+    "location": "Timonium, MD",
+    "position": "Information Security Management Co-op",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "skills": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
     "id": "csmi",
-    "name": "Cloudstream Medical Imaging Inc.",
-    "imagePath": "/assets/images/ultrasound_baby.png"
+    "name": "Cloudstream\n Medical\n Imaging\n Inc.",
+    "imagePath": "/assets/images/ultrasound_baby.png",
+    "date": "September 2022 - Present",
+    "location": "San Diego, CA",
+    "position": "Information Security Management Co-op",
+    "description": "something",
+    "skills": "something"
   },
   {
     "id": "sdsc",
-    "name": "San Diego Supercomputer Center",
-    "imagePath": "/assets/images/supercomputer_center.png"
+    "name": "San\n Diego\n Supercomputer\n Center",
+    "imagePath": "/assets/images/supercomputer_center.png",
+    "date": "September 2022 - Present",
+    "location": "San Diego, CA",
+    "position": "Information Security Management Co-op",
+    "description": "something",
+    "skills": "something"
   }
 ]

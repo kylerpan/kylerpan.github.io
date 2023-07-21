@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-interface Props {
+interface IntroProps {
   description: string;
   header: string;
   button: string;
 }
 
-const Intro = (props: Props) => {
+const Intro = (props: IntroProps) => {
   return (
     <div className="flex flex-col w-full items-center text-center gap-5">
       <p className="text-2xl">{props.description}</p>
