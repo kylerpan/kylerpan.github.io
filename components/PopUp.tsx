@@ -23,6 +23,7 @@ interface PopUpProps {
 const PopUp = (props: PopUpProps) => {
   var datas: any = props.route == "/work/" ? work : projects;
   var data: any = datas[props.index];
+  var link: string = data.link ?? "";
   var location: string = data.location
     .split(", ")[0]
     .replace(" ", "_")
@@ -52,6 +53,7 @@ const PopUp = (props: PopUpProps) => {
             location={data.location}
             description={data.description}
             skills={data.skills[0]}
+            link={link}
           />
         ) : (
           <Timeline className="flex justify-self-start !p-0 gap-5">
@@ -70,6 +72,7 @@ const PopUp = (props: PopUpProps) => {
                       location={data.location}
                       description={data.description[i]}
                       skills={data.skills[i]}
+                      link={link}
                     />
                   </TimelineContent>
                 </TimelineItem>

@@ -3,30 +3,40 @@
     "id": "ups",
     "name": "United\n Parcel\n Service",
     "imagePath": "/assets/images/ups.png",
-    "date": "September 2022 - Present",
+    "date": ["September 2022 - Present"],
     "location": "Timonium, MD",
-    "position": "Information Security Management Co-op",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "skills": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "position": ["Information Security Management Co-op"],
+    "description": [
+      "I work on the New Rating Framework (NRF) team to create new and convert existing APIs to RESTful APIs for external client usage in C#. In doing so, I also had to maintain the existing APIs to match the new features of the RESTful APIs."
+    ],
+    "skills": [["C#", "SQL", ".NET", "RESTful API"]]
   },
   {
     "id": "csmi",
     "name": "Cloudstream\n Medical\n Imaging\n Inc.",
     "imagePath": "/assets/images/ultrasound_baby.png",
-    "date": "September 2022 - Present",
+    "date": ["July 2021 - September 2021", "August 2020 - September 2020"],
     "location": "San Diego, CA",
-    "position": "Information Security Management Co-op",
-    "description": "something",
-    "skills": "something"
+    "position": [
+      "Software Analyst Intern",
+      "Software Quality Assurance Intern"
+    ],
+    "description": [
+      "I implemented code that would clarify the image quality of ultrasound imaging like blurring and sharpening edges of an image and creating a v-wave imaging algorithm for image clarity. I also added more viewing options to the post-processed images.",
+      "I created test cases to check if there were bugs and would fixing any that popped up. I also helped refine the code from open source to fit the functionalities we needed."
+    ],
+    "skills": [["C+, Medical Imaging"], ["C++"]]
   },
   {
     "id": "sdsc",
     "name": "San\n Diego\n Supercomputer\n Center",
     "imagePath": "/assets/images/supercomputer_center.png",
-    "date": "September 2022 - Present",
+    "date": ["June 2020 - Auguest 2020"],
     "location": "San Diego, CA",
-    "position": "Information Security Management Co-op",
-    "description": "something",
-    "skills": "something"
+    "position": ["Teaching Assistant"],
+    "description": [
+      "I taught middle/high school teachers and students the role computing plays in a teaching environment with Python. We helped them program games like Thai21 and Tower of Hanoi. I also helped with office hours: debugging participants' code and clarifying misunderstood topics. Toward the end of the internship, I volunteered to be the speaker for our program to present what we have accomplished to the San Diego Supercomputer Center board members."
+    ],
+    "skills": [["Python", "Tutoring"]]
   }
 ]

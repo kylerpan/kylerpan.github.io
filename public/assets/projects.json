@@ -1,42 +1,54 @@
 [
   {
-    "id": "peterportal",
-    "name": "PeterPortal",
-    "imagePath": "/assets/images/peterportal.png",
-    "date": "September 2022 - Present",
-    "location": "Irvine, CA",
-    "position": "Information Security Management Co-op",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "skills": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    "id": "find-your-anchor",
-    "name": "Find\n Your\n Anchor",
-    "imagePath": "/assets/images/find_your_anchor.png",
-    "date": "September 2022 - Present",
-    "location": "Irvine, CA",
-    "position": "Information Security Management Co-op",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "skills": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "id": "ups-healthcare",
+    "name": "UPS\n Healthcare\n Onboarding\n Portal",
+    "imagePath": "/assets/images/ups_healthcare.png",
+    "date": ["July 2023 - July 2023"],
+    "location": "Timonium, MD",
+    "position": ["Software Developer"],
+    "description": [
+      "I participated in a UPS Hackathon to solve a customer experience problem with UPS Healthcare. I built a website where clients and administrators could see projects associated with each other using Google Cloud Platform the host the project's data."
+    ],
+    "skills": [["React", "NextJS", "ExpressJS", "GCP"]],
+    "link": "https://github.com/UPS-2023-Hackathon/Kyle-and-the-4-Parsippians"
   },
   {
     "id": "bar-path",
     "name": "Bar\n Path\n Tracking",
     "imagePath": "/assets/images/bar_path.png",
-    "date": "September 2022 - Present",
+    "date": ["August 2022 - August 2022"],
     "location": "San Diego, CA",
-    "position": "Information Security Management Co-op",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "skills": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "position": ["Software Developer"],
+    "description": [
+      "I built an object tracking program in Python using a trained deep learning model to track the bar path of my lifts. I used OpenCV during post-processing to draw the lines on the video to indicate the bar path and applied weights to data points to increase the accuracy of the bounding box."
+    ],
+    "skills": [["Python", "OpenCV", "Deep Learning"]],
+    "link": "https://github.com/kylerpan/object-tracking"
   },
   {
-    "id": "ups-healthcare",
-    "name": "UPS\n Healthcare\n Onboarding\n Portal",
-    "imagePath": "/assets/images/ups_healthcare.png",
-    "date": "September 2022 - Present",
-    "location": "Timonium, MD",
-    "position": "Information Security Management Co-op",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "skills": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "id": "peterportal",
+    "name": "PeterPortal",
+    "imagePath": "/assets/images/peterportal.png",
+    "date": ["September 2021 - June 2021"],
+    "location": "Irvine, CA",
+    "position": ["Software Developer"],
+    "description": [
+      "I worked with other developers in ICS Student Council to build a web application to provide course information for UCI students. I independently did work on a new road map feature utilized for 4-year planning and making the website more mobile-friendly. We used RESTful API to get information from databases another branch of ICS Student Council."
+    ],
+    "skills": [["React", "Redux", "ExpressJS"]],
+    "link": "https://github.com/icssc/peterportal-client"
+  },
+  {
+    "id": "find-your-anchor",
+    "name": "Find\n Your\n Anchor",
+    "imagePath": "/assets/images/find_your_anchor.png",
+    "date": ["September 2021 - June 2021"],
+    "location": "Irvine, CA",
+    "position": ["Software Developer"],
+    "description": [
+      "I worked with other developers and designers in Commit the Change to build a web application for Find Your Anchor, a non-profit suicide prevention organization. They send out gratitude boxes to those in need to give them an extra boost in life. I worked on creating a React website to display 30,000+ gratitude boxes on a map for administrators to easily track and approve. Additionally, we used PostgreSQL to hold all the data of the gratitude boxes."
+    ],
+    "skills": [["React", "SQL"]],
+    "link": "https://github.com/ctc-uci/find-your-anchor-frontend"
   }
 ]
