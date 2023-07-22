@@ -34,7 +34,7 @@ export default function About() {
               exercising &#40;weightlifting, running, and badminton&#41;:
               weightlifting for the intensity, running for the solitude, and
               badminton for the competition. I could probably write a whole page
-              about exercising, but I'll cut it short.
+              about exercising, but I&apos;ll cut it short.
               <br />
               <br />
               Feel free to reach out!

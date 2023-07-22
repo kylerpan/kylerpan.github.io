@@ -21,8 +21,10 @@ const Description = (props: DescriptionProps) => {
         <div>
           <p className="text-xl font-bold">Skills Used</p>
           <div className="flex gap-5">
-            {props.skills.map((skill: string) => (
-              <p className="text-xl">{skill}</p>
+            {props.skills.map((skill: string, i: number) => (
+              <p key={i} className="text-xl">
+                {skill}
+              </p>
             ))}
           </div>
         </div>

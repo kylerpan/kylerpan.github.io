@@ -59,7 +59,7 @@ const PopUp = (props: PopUpProps) => {
           <Timeline className="flex justify-self-start !p-0 gap-5">
             {Array.from({ length: data.date.length }).map(
               (el: any, i: number) => (
-                <TimelineItem>
+                <TimelineItem key={i}>
                   <TimelineOppositeContent className="!flex-none !p-0" />
                   <TimelineSeparator>
                     <TimelineDot />
