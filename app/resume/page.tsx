@@ -11,7 +11,7 @@ export default function Resume() {
           header="My Resume"
           button="Download"
         />
-        <div id="description" className="flex gap-12 mt-44">
+        <div id="description" className="flex gap-12 mt-32">
           <Image
             src="/assets/resume.png"
             alt="resume"

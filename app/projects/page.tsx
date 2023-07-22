@@ -11,7 +11,7 @@ export default function Projects() {
           header="My Projects"
           button="Learn more"
         />
-        <div id="description" className="flex gap-12 mt-44 h-[35rem]">
+        <div id="description" className="flex gap-12 mt-32 h-[35rem]">
           {projects.map((project) => (
             <Card
               key={project.id}

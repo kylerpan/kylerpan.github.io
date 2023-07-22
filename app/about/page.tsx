@@ -11,7 +11,7 @@ export default function About() {
           header="My Background"
           button="Learn more"
         />
-        <div id="description" className="flex flex-col w-2/4 gap-12 mt-44">
+        <div id="description" className="flex flex-col w-2/4 gap-12 mt-32">
           <Image
             src="/assets/images/wallpaper.jpg"
             alt="About me picture"
@@ -19,27 +19,27 @@ export default function About() {
             width={500}
             className="w-full"
           />
-          <p className="font-bold text-5xl">
-            I am a software developer and a Computer Science major at UCI
-          </p>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <div className="flex flex-col gap-5">
+            <p className="font-bold text-4xl">
+              I am a student at UCI and a software developer.
+            </p>
+            <p className="text-xl">
+              Thanks for taking the time to learn more about me! I was born and
+              raised in San Diego, hence most of the background being a
+              topological map of San Diego.
+              <br />
+              <br />
+              I love listening to R&B music, learning new skills, and messing
+              around with friends in my free time. But what I love the most is
+              exercising &#40;weightlifting, running, and badminton&#41;:
+              weightlifting for the intensity, running for the solitude, and
+              badminton for the competition. I could probably write a whole page
+              about exercising, but I'll cut it short.
+              <br />
+              <br />
+              Feel free to reach out!
+            </p>
+          </div>
         </div>
       </div>
     </main>

@@ -36,7 +36,7 @@ const PopUp = (props: PopUpProps) => {
       }}
       className={`flex flex-col items-center absolute top-0 left-0 w-full min-h-screen h-fit bg-white`}
     >
-      <div className="flex flex-col m-32 gap-5">
+      <div className="flex flex-col mx-32 mt-20 mb-32 gap-5">
         <div className="flex justify-between items-center">
           <h1 className="text-7xl font-bold">{data.name}</h1>
           <Link
@@ -63,7 +63,7 @@ const PopUp = (props: PopUpProps) => {
                   <TimelineOppositeContent className="!flex-none !p-0" />
                   <TimelineSeparator>
                     <TimelineDot />
-                    <TimelineConnector />
+                    {i != data.date.length - 1 && <TimelineConnector />}
                   </TimelineSeparator>
                   <TimelineContent>
                     <Description
@@ -81,9 +81,11 @@ const PopUp = (props: PopUpProps) => {
           </Timeline>
         )}
       </div>
-      <div className="flex flex-col items-center mb-32">
-        <h2 className="text-4xl font-bold">Other Work</h2>
-        <div id="description" className="flex gap-12 mt-16 h-96">
+      <div className="flex flex-col items-center mb-20">
+        <a href="#others" className="text-4xl font-bold">
+          Other Work
+        </a>
+        <div id="others" className="flex gap-12 mt-16 h-96">
           {datas.map((data: any, i: number) => {
             if (i != props.index) {
               return (
