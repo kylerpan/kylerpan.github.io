@@ -9,8 +9,10 @@ interface IntroProps {
 const Intro = (props: IntroProps) => {
   return (
     <div className="flex flex-col w-full items-center text-center gap-5">
-      <p className="text-2xl">{props.description}</p>
-      <h1 className="text-9xl">{props.header}</h1>
+      <p className="text-xl whitespace-pre-wrap lg:text-2xl lg:whitespace-nowrap">
+        {props.description}
+      </p>
+      <h1 className="text-6xl lg:text-9xl">{props.header}</h1>
       {props.button == "Learn more" && (
         <a
           href="#description"

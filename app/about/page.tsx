@@ -18,6 +18,7 @@ export default function About() {
             height={500}
             width={500}
             className="w-full"
+            priority={true}
           />
           <div className="flex flex-col gap-5">
             <p className="font-bold text-4xl">

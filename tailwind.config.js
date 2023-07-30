@@ -12,6 +12,12 @@ module.exports = {
         irvine: "url('/assets/backgrounds/irvine.png')",
         "san-diego": "url('/assets/backgrounds/san_diego.png')",
       },
+      height: {
+        lvh: ["100vh", "100lvh"],
+      },
+      width: {
+        lvw: ["100vw", "100lvw"],
+      },
     },
   },
   plugins: [],

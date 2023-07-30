@@ -18,6 +18,7 @@ export default function Resume() {
             height={500}
             width={1000}
             className="flex"
+            priority={true}
           />
         </div>
       </div>

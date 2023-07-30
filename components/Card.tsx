@@ -19,6 +19,7 @@ const Card = (props: CardProps) => {
         alt={props.id}
         fill={true}
         className="absolute rounded-full z-1"
+        priority={true}
       />
       <div className="absolute bg-[#585858] rounded-full h-full w-full opacity-70 z-2 hover:bg-[#D4D4D4] hover:text-black transition ease-in-out duration-500" />
       <p className="text-2xl font-bold whitespace-pre-wrap z-10">

@@ -22,7 +22,7 @@ html {
 
 body {
   background: white;
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   background-image: url(../public/assets/backgrounds/san_diego.png);
