@@ -2,12 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import Hamburger from "./Hamburger";
 import Footer from "./Footer";
 
 const Nav = () => {
   const [menu, setMenu] = useState(false);
+  const pathname = usePathname();
+
   menu
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "auto");
@@ -15,10 +18,10 @@ const Nav = () => {
   return (
     <nav
       className={`flex flex-grow-0 flex-shrink flex-row justify-between items-center w-full px-10 py-8 ${
-        menu ? "h-lvh" : ""
+        menu && "h-lvh"
       }`}
     >
-      <Link href="/" className="hidden lg:text-5xl">
+      <Link href="/" className={`text-5xl ${menu && "hidden"}`}>
         KP
       </Link>
       {/* For desktop nav bar */}
@@ -44,10 +47,17 @@ const Nav = () => {
       </div>
       {/* For mobile menu */}
       <div className="flex flex-grow-0 flex-shrink flex-col w-full h-full justify-between lg:hidden">
-        <div className="flex w-full justify-between items-center">
+        <div
+          className={`flex w-full items-center ${
+            menu ? "justify-between" : "justify-end"
+          }`}
+        >
           <Link
             href="/"
-            className={`z-30 text-5xl ${menu ? "text-white" : "text-black"}`}
+            className={`z-30 text-5xl decoration-8 ${
+              menu ? "text-white" : "hidden"
+            }  ${pathname == "/" && menu && "line-through"}`}
+            onClick={() => (menu ? setMenu(!menu) : null)}
           >
             KP
           </Link>
@@ -59,28 +69,36 @@ const Nav = () => {
             <div className="bg-black fixed h-lvh w-lvw top-0 left-0 z-20" />
             <Link
               href="/work"
-              className="text-white z-30 text-5xl"
+              className={`text-white z-30 text-5xl decoration-8 ${
+                pathname == "/work" && "line-through"
+              }`}
               onClick={() => setMenu(!menu)}
             >
               Work
             </Link>
             <Link
               href="/projects"
-              className="text-white z-30 text-5xl"
+              className={`text-white z-30 text-5xl decoration-8 ${
+                pathname == "/projects" && "line-through"
+              }`}
               onClick={() => setMenu(!menu)}
             >
               Projects
             </Link>
             <Link
               href="/resume"
-              className="text-white z-30 text-5xl"
+              className={`text-white z-30 text-5xl decoration-8 ${
+                pathname == "/resume" && "line-through"
+              }`}
               onClick={() => setMenu(!menu)}
             >
               Resume
             </Link>
             <Link
               href="/about"
-              className="text-white z-30 text-5xl"
+              className={`text-white z-30 text-5xl decoration-8 ${
+                pathname == "/about" && "line-through"
+              }`}
               onClick={() => setMenu(!menu)}
             >
               About
