@@ -11,7 +11,10 @@ export default function Work() {
           header="My Work Experience"
           button="Learn more"
         />
-        <div id="description" className="flex gap-12 mt-32 h-[35rem]">
+        <div
+          id="description"
+          className="flex gap-6 mt-32 flex-wrap justify-center lg:gap-12"
+        >
           {work.map((work) => (
             <Card
               key={work.id}

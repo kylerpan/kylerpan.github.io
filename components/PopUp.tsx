@@ -85,7 +85,10 @@ const PopUp = (props: PopUpProps) => {
         <a href="#others" className="text-4xl font-bold">
           Other Work
         </a>
-        <div id="others" className="flex gap-12 mt-16 h-96">
+        <div
+          id="others"
+          className="flex gap-6 mt-16 flex-wrap justify-center lg:gap-12"
+        >
           {datas.map((data: any, i: number) => {
             if (i != props.index) {
               return (

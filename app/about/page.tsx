@@ -11,7 +11,7 @@ export default function About() {
           header="My Background"
           button="Learn more"
         />
-        <div id="description" className="flex flex-col w-2/4 gap-12 mt-32">
+        <div id="description" className="flex flex-col gap-12 mt-32 lg:w-2/4">
           <Image
             src="/assets/images/wallpaper.jpg"
             alt="About me picture"
@@ -21,7 +21,7 @@ export default function About() {
             priority={true}
           />
           <div className="flex flex-col gap-5">
-            <p className="font-bold text-4xl">
+            <p className="font-bold text-3xl lg:text-4xl">
               I am a student at UCI and a software developer.
             </p>
             <p className="text-xl">
