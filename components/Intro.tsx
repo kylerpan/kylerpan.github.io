@@ -21,15 +21,6 @@ const Intro = (props: IntroProps) => {
           Learn more
         </a>
       )}
-      {props.button == "Download" && (
-        <a
-          target="_blank"
-          href="/assets/Kyle Pan Resume.pdf"
-          className="mt-16 text-base text-white bg-black w-fit rounded-md py-2 px-3 text-center"
-        >
-          Download
-        </a>
-      )}
       {props.button == "About me" && (
         <Link
           href="/about"

@@ -15,8 +15,8 @@ interface FooterProps {
 const Footer = (props: FooterProps) => {
   return (
     <div
-      className={`flex flex-grow-0 flex-shrink justify-end gap-5 mt-5 z-30 ${
-        !props.menu && "px-10 py-8"
+      className={`flex flex-grow-0 flex-shrink justify-end gap-5 mt-5 ${
+        !props.menu ? "px-10 py-8" : "z-30"
       }`}
     >
       <Link

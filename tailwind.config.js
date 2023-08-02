@@ -14,6 +14,8 @@ module.exports = {
       },
       height: {
         lvh: ["100vh", "100lvh"],
+        dvh: ["100vh", "100dvh"],
+        svh: ["100vh", "100svh"],
       },
       width: {
         lvw: ["100vw", "100lvw"],

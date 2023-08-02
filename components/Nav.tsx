@@ -18,9 +18,10 @@ const Nav = () => {
   });
 
   return (
+    // TODO: figure out mobile menu still being able to slide
     <nav
       className={`flex flex-grow-0 flex-shrink flex-row justify-between items-center w-full px-10 py-8 ${
-        menu && "h-lvh"
+        menu && "h-dvh"
       }`}
     >
       <Link href="/" className={`text-5xl ${menu && "hidden"}`}>
@@ -34,12 +35,16 @@ const Nav = () => {
         <Link href="/projects" className="text-lg">
           Projects
         </Link>
-        <Link href="/resume" className="text-lg">
-          Resume
-        </Link>
         <Link href="/about" className="text-lg">
           About
         </Link>
+        <a
+          target="_blank"
+          href="/assets/Kyle Pan Resume.pdf"
+          className="text-lg"
+        >
+          Resume
+        </a>
         <a
           href="mailto:kylerpan691@gmail.com"
           className="text-lg text-white bg-black rounded-md py-2 px-3 text-center"
@@ -48,9 +53,9 @@ const Nav = () => {
         </a>
       </div>
       {/* For mobile menu */}
-      <div className="flex flex-grow-0 flex-shrink flex-col w-full h-full justify-between lg:hidden">
+      <div className="flex flex-col w-full h-full justify-between lg:hidden">
         <div
-          className={`flex w-full items-center ${
+          className={`flex flex-grow-0 flex-shrink w-full items-center ${
             menu ? "justify-between" : "justify-end"
           }`}
         >
@@ -67,8 +72,8 @@ const Nav = () => {
         </div>
 
         {menu && (
-          <div className="flex flex-grow flex-shrink justify-end flex-col gap-7 pb-24">
-            <div className="bg-black fixed h-lvh w-lvw top-0 left-0 z-20" />
+          <div className="flex flex-grow flex-shrink justify-end flex-col gap-7 pb-14">
+            <div className="bg-black fixed h-dvh w-lvw top-0 left-0 z-20 overflow-hidden" />
             <Link
               href="/work"
               className={`text-white z-30 text-5xl decoration-8 ${
@@ -88,15 +93,6 @@ const Nav = () => {
               Projects
             </Link>
             <Link
-              href="/resume"
-              className={`text-white z-30 text-5xl decoration-8 ${
-                pathname == "/resume" && "line-through"
-              }`}
-              onClick={() => setMenu(!menu)}
-            >
-              Resume
-            </Link>
-            <Link
               href="/about"
               className={`text-white z-30 text-5xl decoration-8 ${
                 pathname == "/about" && "line-through"
@@ -105,6 +101,13 @@ const Nav = () => {
             >
               About
             </Link>
+            <a
+              target="_blank"
+              href="/assets/Kyle Pan Resume.pdf"
+              className="text-white z-30 text-5xl"
+            >
+              Resume
+            </a>
             <a
               href="mailto:kylerpan691@gmail.com"
               className="text-white z-30 text-5xl"
