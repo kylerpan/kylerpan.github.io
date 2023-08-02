@@ -34,14 +34,16 @@ const PopUp = (props: PopUpProps) => {
       style={{
         backgroundImage: `url(/assets/backgrounds/${location}.png)`,
       }}
-      className={`flex flex-col items-center absolute top-0 left-0 w-full min-h-screen h-fit bg-white`}
+      className={`flex flex-col px-12 items-center absolute top-0 left-0 w-full h-fit bg-white z-40 lg:px-32`}
     >
-      <div className="flex flex-col mx-32 mt-20 mb-32 gap-5">
-        <div className="flex justify-between items-center">
-          <h1 className="text-7xl font-bold">{data.name}</h1>
+      <div className="flex flex-col mt-14 mb-32 gap-5 w-full h-fit lg:mt-20">
+        <div className="flex justify-between items-center w-full">
+          <h1 className="flex text-4xl font-bold flex-wrap lg:text-7xl">
+            {data.name}
+          </h1>
           <Link
             href={props.route.slice(0, -1)}
-            className="text-5xl font-bold ml-5"
+            className="text-4xl font-bold ml-5 lg:text-5xl"
           >
             &#10005;
           </Link>
@@ -81,8 +83,8 @@ const PopUp = (props: PopUpProps) => {
           </Timeline>
         )}
       </div>
-      <div className="flex flex-col items-center mb-20">
-        <a href="#others" className="text-4xl font-bold">
+      <div className="flex flex-col items-center mb-20 h-fit">
+        <a href="#others" className="text-3xl font-bold lg:text-4xl">
           Other Work
         </a>
         <div
