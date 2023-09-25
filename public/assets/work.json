@@ -3,11 +3,11 @@
     "id": "ups",
     "name": "United\n Parcel\n Service",
     "imagePath": "/assets/images/ups.png",
-    "date": ["September 2022 - Present"],
+    "date": ["September 2022 - September 2023"],
     "location": "Timonium, MD",
     "position": ["Information Security Management Co-op"],
     "description": [
-      "I work on the New Rating Framework (NRF) team to create new and convert existing APIs to RESTful APIs for external client usage in C#. In doing so, I also had to maintain the existing APIs to match the new features of the RESTful APIs."
+      "I work on the New Rating Framework (NRF) team to determine the billing of packages. I create new and convert existing APIs to RESTful APIs for external client usage in C#. I created a tool to help developers convert JSON requests into XML test cases."
     ],
     "skills": [["C#", "SQL", ".NET", "RESTful API"]]
   },
