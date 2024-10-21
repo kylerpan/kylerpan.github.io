@@ -34,7 +34,7 @@ const PopUp = (props: PopUpProps) => {
       style={{
         backgroundImage: `url(/assets/backgrounds/${location}.png)`,
       }}
-      className={`flex flex-col px-12 items-center absolute top-0 left-0 w-full h-fit bg-white z-40 lg:px-32`}
+      className={`flex flex-col px-12 items-center absolute top-0 left-0 w-full h-fit bg-white bg-cover z-40 lg:px-32`}
     >
       <div className="flex flex-col mt-14 mb-32 gap-5 w-full h-fit lg:mt-20">
         <div className="flex justify-between items-center w-full">

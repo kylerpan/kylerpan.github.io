@@ -1,11 +1,23 @@
 [
   {
+    "id": "intel",
+    "name": "Intel",
+    "imagePath": "/assets/images/intel.jpg",
+    "date": ["January 2023 - Present"],
+    "location": "Folsom, CA",
+    "position": ["Software Engineer Intern"],
+    "description": [
+      "Working in the system level validation team to provide validation capabilities to the Intel validation community. Most notably, working on pre-scillicon validation tools with the EDK II environment."
+    ],
+    "skills": [["C", "Linux", "Python", "C++"]]
+  },
+  {
     "id": "ups",
     "name": "United\n Parcel\n Service",
     "imagePath": "/assets/images/ups.png",
     "date": ["September 2022 - September 2023"],
     "location": "Timonium, MD",
-    "position": ["Information Security Management Co-op"],
+    "position": ["Software Engineer Intern"],
     "description": [
       "I work on the New Rating Framework (NRF) team to determine the billing of packages. I create new and convert existing APIs to RESTful APIs for external client usage in C#. I created a tool to help developers convert JSON requests into XML test cases."
     ],
@@ -25,7 +37,7 @@
       "I implemented code that would clarify the image quality of ultrasound imaging like blurring and sharpening edges of an image and creating a v-wave imaging algorithm for image clarity. I also added more viewing options to the post-processed images.",
       "I created test cases to check if there were bugs and would fixing any that popped up. I also helped refine the code from open source to fit the functionalities we needed."
     ],
-    "skills": [["C+, Medical Imaging"], ["C++"]]
+    "skills": [["C++, Medical Imaging"], ["C++"]]
   },
   {
     "id": "sdsc",
